@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Abel ;
+    src: url('../fonts/Abel/Abel-Regular.ttf');
+}
+@font-face {
+    font-family: Anton ;
+    src: url('../fonts/Anton/Anton-Regular.ttf');
+}
+@font-face {
+    font-family: Josefin ;
+    src: url('../fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: Livvic;
+    src: url('../fonts/Livvic/Livvic-Black.ttf');
+}
+@font-face {
+    font-family: lato;
+    src: url('../fonts/Lato-Thin.ttf');
+}
+@font-face {
+    font-family: changa;
+    src: url('../fonts/Changa-VariableFont_wght.ttf');
+}

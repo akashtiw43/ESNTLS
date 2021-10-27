@@ -1,0 +1,513 @@
+@import url('/css/fonts.css');
+
+html,body{
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+:root{
+    --Abel: 'Abel';
+    --Anton: 'Anton';
+    --Josefin:'Josefin',;
+    --Livvic:'Livvic';
+    --lato:'lato';
+    --changa:'changa';
+    --grey:#333d29;
+    --lgrey:#414833;
+    --heading:rgb(20, 6, 46);
+     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+     --orange:rgb(241, 69, 6);
+}
+/*-----global classes----*/
+
+a{
+    text-decoration: none;
+    color: var(--grey);
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4.5rem ;
+}
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+h2{
+    font-family: garamond;
+    font-size: 1.6rem;
+    color: var(--heading);
+}
+h4{
+    font-family: impact;
+    font-size: 1.5rem;
+    color: rgb(6, 6, 41);
+}
+.btn{
+    border:none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+
+}
+span{
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    margin: 0 5vw;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--lgrey);
+}
+/*---***--global classes--***--*/
+
+/*--------------DARK THEME----------*/
+.dark-theme{
+    filter: invert(100%);
+}
+/*-----xxx---------DARK THEME-----xxx-----*/
+
+/*-----------Navbar----------*/
+
+.nav{
+    background:white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 15vh;
+    overflow:hidden;
+    transition: height 1s ease-in-out ;
+}
+.nav .nav-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+
+}
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0rem;
+}
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: darkslategrey;
+}
+.collapse{
+    height: 30rem;
+}
+
+.brand{
+    
+    height: 0rem;
+    min-height: 15vh;
+
+}
+.nav .nav-items .nav-link{
+    font-size: 1.1rem;
+    position: relative;
+    padding: 1.4rem 1rem;
+    font-family: var(--Abel);
+}
+.nav .nav-items .nav-link:hover{
+    background:var(--lgrey);
+
+}
+.nav .nav-items .nav-link:hover a{
+    color: white;
+}
+.nav .social{
+    padding: 1.6rem 0rem;
+}
+i{
+ padding: 0rem 0.1rem;
+}
+i:hover{
+    color: rgb(197, 35, 116);
+}
+/*-----***Navbar---------*/
+
+
+/*-----------------MAIN CONTENT--------------*/
+
+
+
+/*--------------SITE-TITLE-----------*/
+main .site-title{
+    background:url('../pics/new.jpg');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+main .site-title .site-bg{
+    padding-top: 10rem;
+    text-align: center;
+    color:rgba(231, 228, 228, 0.959);
+}
+main .site-title h1,h3{
+    margin: .2rem;
+}
+.btn{
+    margin: 1.6rem;
+    background:transparent;
+    border:1px solid white;
+}
+main .site-title .btn:hover{
+    background:rgba(231, 228, 228, 0.959);
+    
+    color:var(--grey);
+}
+
+
+/*-------xxxx-------SITE-TITLE-----xxxx------*/
+
+
+
+
+/*-----------OWL Carousel----------------*/
+
+main .blog{
+   /* background:url('../pics/');*/
+    background-position: right;
+    background-repeat: no-repeat;
+    height:100vh;
+    width:100%;
+}
+main .blog .blog-post{
+    padding-top: 1rem;
+
+}
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 1rem 2rem;
+    box-shadow: 0 15px 20px rgb(44, 43, 43);
+}
+main  .btn-blog{
+    border:2px solid black;
+    color: black;
+    padding:.4rem 1rem .7rem 1rem;
+    margin: .1rem .5rem .5rem .5rem;
+}
+main .btn-blog:hover{
+    background: var(--sky);
+}
+main .blog-content span{
+    padding-bottom: 1rem ;
+}
+main .category{
+    text-align: center;
+    margin: 5rem auto 1rem auto;
+}
+main .cat{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--grey);
+    font-size: 2.8rem;
+}
+
+/*-----xxxxx---------------OWL Carousel------------------xxxxxxxxx--------*/
+
+
+
+/*---------------------------SITE CONTENT-----------------------*/
+main .category{
+    box-shadow: 5px 5px 5px var(--grey);
+}
+main .site-content{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.site-content{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+main .post-content{
+    width: 70%;
+   
+}
+main .site-content .post-content > .post-image, .post-title{
+ 
+    padding:1rem 2rem;
+    position: relative;
+}
+main .site-content .post-content > .post-image .post-info{
+    background:var(--orange);
+    color:white;
+    position:absolute;
+    padding:1rem;
+    left:8vw;
+    bottom: 0%;
+    border-radius: 3rem;
+}
+main .site-content .post-content > .post-image .fav{
+    width: 70%;
+    transition: all 1s ease;
+}
+main .site-content .post-content > .post-image .fav:hover{
+    transform:scale(1.1);
+}
+.cel{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:var(--orange);
+    font-size: 1.3rem;
+}
+.post-btn{
+    background: var(--sky);
+    color: black;
+    border:none;
+    padding:1rem 2rem;
+    cursor: pointer;
+}
+.newsletter{
+    padding-top: 2rem;
+}
+.btn-form{
+    display: block;
+    padding:.3rem .6rem;
+    margin-top: .5rem;
+    background: var(--sky);
+    border: none;
+    border-radius: .2rem;
+    color: #333d29;
+}
+/*---------xxxxxxxxx---------SITE CONTENT-----xxxxxxxxxxxx----------*/
+
+
+
+
+/*---------------------SIDEBAR-------------*/
+.shop{
+    text-align: center;
+    box-shadow: 3px 3px 3px var(--orange);
+    margin:2rem auto;
+    font-size: 1.8rem;
+}
+.items{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    padding:1rem 3rem;
+    margin:.2rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    border:2px solid black;
+    border-radius: 3rem;
+}
+.wear{
+    display: flex;
+    flex-direction: column;
+}
+
+.site-content .sidebar .recent .post-content{
+    padding:1rem 0rem 1rem 4rem;
+    width: 100%;
+
+}
+.site-content .sidebar .recent .post-content:hover{
+  pointer-events: none;
+}
+.sidebar .recent .shop{
+    padding-top:8rem;
+    box-shadow: none;
+}
+.site-content .sidebar .post-info{
+    padding:0.4rem 3rem !important;
+    bottom:0rem !important;
+    left:2rem !important;
+    border-radius: 0rem !important;
+    background:rgb(199, 172, 172) !important;
+    width: 40%;
+    
+}
+
+.cel{
+    color:var(--grey);
+    font-family: 'bookman';
+    font-size: 1.4rem;
+    margin: .1rem 4rem;
+    
+
+}
+.price{
+    color: black;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+}
+
+/*---------XXXXXXXX-----------SIDEBAR------XXXXXXX---*/
+
+
+/*--------xxxxxxxxxxxx---------------------MAIN CONTENT-----------xxxxxxxxxxxxxxxxxxxxxxxxxxxxx-------*/
+
+
+
+
+/*-------------------------------------FOOTER----------------------------*/
+footer.footer{
+    height: 100%;
+    background: rgba(0, 0, 0, 0.856);
+    position: relative;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer.footer .newsletter .form-element{
+    background: black;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    width: 74%;
+}
+
+footer.footer .newsletter .form-element span{
+    background: var(--sky);
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+footer.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
+footer.footer .follow div i{
+    color:white;
+    padding: 0 .4rem;
+}
+
+footer.footer .rights{
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer.footer .rights h5 a{
+    color: white;
+}
+footer.footer .rights h5 i{
+    color: rgb(101, 101, 201);
+    font-size: 1rem;
+}
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span{
+    color: white;
+}
+
+footer.footer .move-up span:hover{
+    cursor: pointer;
+}
+.end{
+    color: rgb(158, 114, 209);
+}
+/*--------------xxxxxx-----------------FOOTER-----------xxxxxxxxxx------------*/
+
+/*------------viewport less than 1130px----------*/ 
+@media only screen and (max-width:1130px){
+    .site-content > .post-image, .post-info{
+        left:2rem !important;
+        bottom:1.2rem !important;
+        border-radius: 0px !important;
+    }
+    footer.footer .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+/*----xxx----viewport less than 1130px---xxx---*/
+
+/*--------viewport less than 750px------*/
+
+@media only screen and (max-width:750px){
+    
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+   
+         }
+    .nav .toggle-collapse{
+        display: initial;
+         }
+    main .site-content{
+        grid-template-columns: 100%;
+        }
+        footer.footer .container{
+            grid-template-columns: repeat(1,1fr);
+        }
+   
+    }
+/*-----****viewport less than 750px---***----*/
+
+
+/*--------viewport less than 520px------*/
+
+@media only screen and (max-width:520px){
+    .site-content > .post-image, .post-info{
+        display: none;
+    }
+    footer.footer .container > div{
+        padding: 1rem .9rem !important;
+    }
+    footer .rights{
+        padding:0 1.4rem;
+        text-align: center;
+    }
+    .nav .toggle-collapse{
+        width:80% !important;
+    }
+}
+/*-----xxx---viewport less than 520px--xxx----*/
+
+@media only screen and (max-width:400px){
+    .post-title h4{
+        margin:auto;
+        padding:auto;
+    }
+}
